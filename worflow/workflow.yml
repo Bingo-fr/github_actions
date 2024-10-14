@@ -1,7 +1,7 @@
 name:Shell commands
 on: [push]
 jobs:
-    run-shekk-command:
+    run-shell-command:
      runs-on: ${{matrix.os}}
      strategy:
      matrix:
@@ -11,6 +11,6 @@ jobs:
         run: echo "Hello World!"
       - name: multiline script
         run:
-            python3 -V
-            touch my_file_with_workflow.py
-            ls -l
+          python3 -V
+          touch my_file_with_workflow.py
+          ls -l
